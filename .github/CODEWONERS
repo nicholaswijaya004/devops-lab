@@ -1,0 +1,9 @@
+# Last matching pattern wins. Broad rules first, narrow rules last.
+
+*                       @nicholaswijaya004
+
+/.github/               @nicholaswijaya004
+/.github/workflows/     @nicholaswijaya004
+
+/docs/                  @nicholaswijaya004
+*.md                    @nicholaswijaya004
