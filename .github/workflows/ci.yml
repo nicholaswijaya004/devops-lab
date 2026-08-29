@@ -12,7 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run tests
-        run: |
-          echo "Pretending to run a test suite"
-          exit 0
+      - run: echo "tests go here"
+
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pipx install yamllint
+      - run: yamllint .github/workflows/
